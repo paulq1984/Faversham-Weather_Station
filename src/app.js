@@ -11,7 +11,7 @@ const rainfall = document.querySelector('#currentRainfall');
 
 const picture = document.querySelector('#image');
 
-fetch('https://18.221.232.179:8000/data')
+fetch('https://faversham-weather-station.onrender.com/data')
   .then((res) => res.json())
   .then((data) => {
     data.forEach((weather) => {
